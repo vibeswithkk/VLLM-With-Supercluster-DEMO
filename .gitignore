@@ -1,0 +1,969 @@
+# .gitignore file for VLLM-With-Supercluster-DEMO repository
+
+# Build directories
+build/
+build_test/
+*.build/
+build_*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+
+# Compiled static libraries
+*.lib
+*.a
+*.lai
+
+# Compiled dynamic libraries
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+single_gpu_infer*
+multi_gpu_infer*
+latency_bench*
+
+# CUDA compilation artifacts
+*.ptx
+*.cubin
+*.fatbin
+*.cu.o
+*.cpp.o
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.pyo.*
+*.pyd.*
+.Python
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.pyo.*
+*.pyd.*
+.pytest_cache/
+.coverage
+.gitlab-ci.yml
+.coveralls.yml
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+.ENV/
+
+# Jupyter Notebook checkpoint files
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Log files
+*.log
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# CMake specific
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# CLion specific
+CMakeLists.txt.user
+CMakeLists.txt.in
+CMakeLists.txt.bak
+
+# Visual Studio specific
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.tlog
+*.ipch
+*.aps
+*.pch
+*.exp
+*.idb
+*.pdb
+*.ilk
+*.res
+*.obj
+*.lib
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.rsp
+*.pgc
+*.pgd
+*.meta
+*.trace
+*.ncb
+*.log
+*.manifest
+*.resfiles
+*.rc2
+*.rct
+*.lastbuildstate
+*.unsuccessfulbuild
+*.cache
+*.cod
+*.cachefile
+*.ipdb
+*.iobj
+*.pri
+*.targets
+*.tlog
+*.uoa
+*.uob
+*.uoc
+*.uod
+*.uoe
+*.uof
+*.uog
+*.uoh
+*.uoi
+*.uoj
+*.uok
+*.uol
+*.uom
+*.uon
+*.uoo
+*.uop
+*.uoq
+*.uor
+*.uos
+*.uot
+*.uou
+*.uov
+*.uow
+*.uox
+*.uoy
+*.uoz
+
+# Xcode specific
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
+*.xcworkspacedata
+*.xccheckout
+*.xcscmblueprint
+
+# Eclipse specific
+*.project
+*.classpath
+*.cproject
+*.settings/
+
+# Code::Blocks specific
+*.cbp
+*.layout
+
+# Dev-C++ specific
+*.dev
+
+# Qt Creator specific
+*.pro.user
+*.pro.user.*
+
+# KDevelop specific
+*.kdev4
+*.kdevelop
+*.kdevelop.pcs
+
+# Anjuta specific
+*.anjuta
+*.anjuta_sym_db
+
+# MonoDevelop specific
+*.userprefs
+*.usertasks
+
+# NetBeans specific
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# IntelliJ IDEA specific
+*.iml
+*.iws
+*.ipr
+out/
+.idea/
+.idea_modules/
+
+# Vim specific
+*.swp
+*.swo
+*.swn
+*.swm
+*.swh
+*.swi
+*.swk
+*.swl
+*.swp.*
+.Session.vim
+.netrwhist
+
+# Emacs specific
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text specific
+*.sublime-project
+*.sublime-workspace
+*.sublime-package
+
+# TextMate specific
+*.tm_properties
+*.tmproj
+
+# Atom specific
+*.atom/
+*.atom-compile-cache/
+
+# Brackets specific
+*.brackets.json
+
+# CodeKit specific
+*.codekit-cache
+config.codekit
+config.codekit2
+config.codekit3
+
+# Gradle specific
+.gradle/
+build/
+
+# Maven specific
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.node_repl_history
+
+# Docker specific
+.dockerignore
+Dockerfile*
+docker-compose*.yml
+
+# Vagrant specific
+.vagrant/
+
+# Terraform specific
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Ansible specific
+*.retry
+
+# Chef specific
+cookbooks/
+roles/
+data_bags/
+environments/
+nodes/
+
+# Puppet specific
+modules/
+manifests/
+*.pp.*
+
+# SaltStack specific
+salt/
+pillar/
+
+# Kubernetes specific
+*.k8s.yaml
+*.k8s.yml
+
+# Helm specific
+*.tgz
+Chart.lock
+
+# OpenShift specific
+*.openshift/
+
+# Cloud Foundry specific
+*.cfignore
+
+# Heroku specific
+.heroku/
+.slugignore
+
+# AWS specific
+.aws/
+*.aws/
+*.aws-credentials
+
+# Azure specific
+.azure/
+*.azure-credentials
+
+# Google Cloud specific
+.gcloud/
+*.gcloud-credentials
+
+# Travis CI specific
+.travis.yml
+
+# CircleCI specific
+.circleci/
+
+# GitHub Actions specific
+.github/workflows/
+
+# GitLab CI specific
+.gitlab-ci.yml
+
+# Jenkins specific
+jenkins.out
+jenkins.err
+
+# TeamCity specific
+.teamcity/
+
+# Bamboo specific
+.bamboo/
+
+# Bitbucket Pipelines specific
+bitbucket-pipelines.yml
+
+# Drone CI specific
+.drone.yml
+
+# AppVeyor specific
+.appveyor.yml
+
+# Scrutinizer specific
+.scrutinizer.yml
+
+# Coveralls specific
+.coveralls.yml
+
+# Codecov specific
+*.codecov.yml
+codecov.yml
+
+# SonarQube specific
+.sonar/
+
+# Browserify specific
+.browserify
+
+# Bower specific
+bower_components/
+
+# Composer specific
+vendor/
+composer.phar
+composer.lock
+
+# NuGet specific
+*.nupkg
+*.nuspec
+packages/
+
+# Ruby specific
+*.gem
+*.rbc
+/.config
+/coverage/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.pyo.*
+*.pyd.*
+.Python
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.pyo.*
+*.pyd.*
+.pytest_cache/
+.coverage
+.gitlab-ci.yml
+.coveralls.yml
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage.*
+.cache
+.pytest_cache/
+.pytest_cache_*/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+hs_err_pid*
+
+# Scala specific
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+
+# Kotlin specific
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+
+# Groovy specific
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+
+# Clojure specific
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+
+# Gradle specific
+.gradle/
+build/
+
+# Maven specific
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# SBT specific
+.target/
+dist/*
+.cache/
+
+# C# specific
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.opparams
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# F# specific
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.opparams
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Basic specific
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.opparams
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# C++ specific
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.lib
+*.a
+*.lai
+*.la
+*.lo
+*.slo
+*.o
+*.obj
+*.exe
+*.so
+*.dylib
+*.dll
+*.lib
+*.a
+*.pdb
+*.ilk
+*.idb
+*.pdb
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.tlog
+*.ipch
+*.aps
+*.pch
+*.exp
+*.idb
+*.pdb
+*.ilk
+*.res
+*.obj
+*.lib
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.rsp
+*.pgc
+*.pgd
+*.meta
+*.trace
+*.ncb
+*.log
+*.manifest
+*.resfiles
+*.rc2
+*.rct
+*.lastbuildstate
+*.unsuccessfulbuild
+*.cache
+*.cod
+*.cachefile
+*.ipdb
+*.iobj
+*.pri
+*.targets
+*.tlog
+*.uoa
+*.uob
+*.uoc
+*.uod
+*.uoe
+*.uof
+*.uog
+*.uoh
+*.uoi
+*.uoj
+*.uok
+*.uol
+*.uom
+*.uon
+*.uoo
+*.uop
+*.uoq
+*.uor
+*.uos
+*.uot
+*.uou
+*.uov
+*.uow
+*.uox
+*.uoy
+*.uoz
+
+# CUDA specific
+*.ptx
+*.cubin
+*.fatbin
+*.cu.o
+*.cpp.o
+
+# Documentation artifacts
+docs/_build/
+docs/build/
+docs/html/
+docs/latex/
+docs/doctrees/
+docs/man/
+docs/texinfo/
+docs/text/
+docs/xml/
+docs/linkcheck/
+docs/coverage/
+
+# Testing artifacts
+test-results/
+test_*.xml
+test-reports/
+TEST-*.xml
+junit/
+.nyc_output/
+.coverage
+.coverage.*
+.cover
+*.cover
+coverage/
+*.lcov
+lcov.info
+*.lcov.info
+*.gcov
+*.gcda
+*.gcno
+*.gcov.*
+*.gcda.*
+*.gcno.*
+
+# Benchmark artifacts
+bench-results/
+benchmark-results/
+
+# Distribution artifacts
+dist/
+*.tar.gz
+*.zip
+*.whl
+*.egg
+*.egg-info/
+*.egg-info
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.envrc
+.terraformrc
+.terraform.lock.hcl
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.patch
+*.diff
+*.swp
+*.swo
+
+# Merge files
+*.orig
+*.rej
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+
+# Lock files
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+composer.lock
+Gemfile.lock
+Pipfile.lock
+poetry.lock
+Cargo.lock
+mix.lock
+shrinkwrap.yaml
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific
+*.idea/
+*.vscode/
+*.code-workspace
+
+# Editor specific
+*~
+.*.sw[op]
+*.sublime-project
+*.sublime-workspace
+.settings/
+.netbeans/
+*.tmproj
+*.tm_properties
+
+# Debug files
+*.dSYM/
+*.stackdump
+core.*
+core
+core.*
+
+# Profiling files
+*.prof
+*.pkl
+*.gpickle
+*.gexf
+*.gml
+*.graphml
+*.mtx
+*.net
+*.ncol
+*.lgl
+*.edgelist
+*.edges
+*.adjlist
+*.adj
+*.pickle
+*.ser
+*.json
+*.xml
+*.yaml
+*.yml
+*.csv
+*.tsv
+*.txt
+*.dat
+*.data
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+*.sdb
+*.s3db
+*.db-shm
+*.db-wal
+*.fdb
+*.fdb-sp
+*.fdb-tmp
+*.fdb-wal
+*.fdb-shm
+*.fdb-journal
+*.fdb-lock
+*.fdb-0
+*.fdb-1
+*.fdb-2
+*.fdb-3
+*.fdb-4
+*.fdb-5
+*.fdb-6
+*.fdb-7
+*.fdb-8
+*.fdb-9
+*.fdb-10
+*.fdb-11
+*.fdb-12
+*.fdb-13
+*.fdb-14
+*.fdb-15
+*.fdb-16
+*.fdb-17
+*.fdb-18
+*.fdb-19
+*.fdb-20
+*.fdb-21
+*.fdb-22
+*.fdb-23
+*.fdb-24
+*.fdb-25
+*.fdb-26
+*.fdb-27
+*.fdb-28
+*.fdb-29
+*.fdb-30
+*.fdb-31
+*.fdb-32
+*.fdb-33
+*.fdb-34
+*.fdb-35
+*.fdb-36
+*.fdb-37
+*.fdb-38
+*.fdb-39
+*.fdb-40
+*.fdb-41
+*.fdb-42
+*.fdb-43
+*.fdb-44
+*.fdb-45
+*.fdb-46
+*.fdb-47
+*.fdb-48
+*.fdb-49
+*.fdb-50
+*.fdb-51
+*.fdb-52
+*.fdb-53
+*.fdb-54
+*.fdb-55
+*.fdb-56
+*.fdb-57
+*.fdb-58
+*.fdb-59
+*.fdb-60
+*.fdb-61
+*.fdb-62
+*.fdb-63
+*.fdb-64
+*.fdb-65
+*.fdb-66
+*.fdb-67
+*.fdb-68
+*.fdb-69
+*.fdb-70
+*.fdb-71
+*.fdb-72
+*.fdb-73
+*.fdb-74
+*.fdb-75
+*.fdb-76
+*.fdb-77
+*.fdb-78
+*.fdb-79
+*.fdb-80
+*.fdb-81
+*.fdb-82
+*.fdb-83
+*.fdb-84
+*.fdb-85
+*.fdb-86
+*.fdb-87
+*.fdb-88
+*.fdb-89
+*.fdb-90
+*.fdb-91
+*.fdb-92
+*.fdb-93
+*.fdb-94
+*.fdb-95
+*.fdb-96
+*.fdb-97
+*.fdb-98
+*.fdb-99

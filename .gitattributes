@@ -1,0 +1,75 @@
+# .gitattributes file for VLLM-With-Supercluster-DEMO repository
+
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Define specific line ending handling for different file types
+*.c text eol=lf
+*.cpp text eol=lf
+*.cu text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.cmake text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+
+# Binary files should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.bin binary
+
+# Ensure shell scripts are executable
+*.sh text eol=lf executable
+
+# Jupyter notebooks - treat as text but be careful with line endings
+*.ipynb text eol=lf
+
+# CUDA files
+*.cu text eol=lf
+*.cuh text eol=lf
+
+# Documentation files
+*.md text eol=lf
+*.rst text eol=lf
+*.txt text eol=lf
+
+# Configuration files
+*.cfg text eol=lf
+*.conf text eol=lf
+*.ini text eol=lf
+*.toml text eol=lf
+
+# Build system files
+CMakeLists.txt text eol=lf
+Makefile text eol=lf
+*.make text eol=lf
+*.mk text eol=lf
+
+# Git files (if in repo)
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# License file
+LICENSE text eol=lf
+LICENSE.* text eol=lf
+
+# README files
+README text eol=lf
+README.* text eol=lf
+
+# Diff behavior for specific files
+*.ipynb diff=ipynb
