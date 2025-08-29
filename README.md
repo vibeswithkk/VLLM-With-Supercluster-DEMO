@@ -212,7 +212,7 @@ Performance-optimized normalization kernels
 
 </details>
 
-### ⚙ Inference Engine
+###  Inference Engine
 
 <details>
 <summary>Click to expand</summary>
@@ -503,7 +503,7 @@ Before you begin, ensure you have the following installed:
 - **C++ compiler** with C++14 support
 - **NCCL library** for distributed computing (optional but recommended)
 
-### 🛠️ Building the Project
+### Building the Project
 
 We provide multiple build options depending on your platform:
 
@@ -632,4 +632,5 @@ This repository demonstrates concepts that typically require enterprise-grade ha
 
 
 For detailed usage instructions, see [docs/usage.md](docs/usage.md).
+
 
