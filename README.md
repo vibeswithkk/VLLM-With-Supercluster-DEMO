@@ -157,7 +157,7 @@ scripts/                        # Cluster job submission scripts
       %%% sbatch_multi_gpu.sh
       %%% sbatch_multinode.sh
 %%%
-docs/                           # Documentation
+docs/                          # Documentation
   %%% usage.md                 # Detailed usage guide
   %%% project_summary.md       # Project completion summary
   %%% distributed_computing.md # Distributed computing documentation
@@ -540,7 +540,7 @@ make -j4
 
 >  For detailed build instructions, see [docs/usage.md](docs/usage.md).
 
-### ▶ Running Examples
+###  Running Examples
 
 After building, you can run the examples:
 
@@ -628,7 +628,8 @@ This repository demonstrates concepts that typically require enterprise-grade ha
 - **RAM**: 16GB+ system memory
 - **Storage**: 10GB+ free disk space
 
-> ⚠ **Note**: The code is designed to be educational and may require modification for execution on consumer hardware. Some advanced features require enterprise-grade infrastructure.
+>  **Note**: The code is designed to be educational and may require modification for execution on consumer hardware. Some advanced features require enterprise-grade infrastructure.
 
 
 For detailed usage instructions, see [docs/usage.md](docs/usage.md).
+
